@@ -1,0 +1,89 @@
+<html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buscador de Cafeterías</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+</head>
+<body>
+  <header>
+    <h1>Buscador de Cafeterías</h1>
+    <p>Descubre cafeterías cerca de ti usando OpenStreetMap</p>
+  </header>
+
+  <main>
+    <div id="controls">
+      <div class="control-group">
+        <label for="address-search">Buscar por dirección o nombre:</label>
+        <div class="search-box">
+          <input 
+            type="text" 
+            id="address-search" 
+          />
+          <button id="address-search-btn">Buscar</button>
+        </div>
+        <div class="search-help">
+  <small>💡 Puedes buscar por dirección ("Avenida Corrientes") o por nombre de cafetería ("Flora", "Starbucks")</small>
+</div>
+      </div>
+      <div class="control-row">
+        <div class="control-item">
+          <label for="radius">Radio de búsqueda:</label>
+          <select id="radius">
+            <option value="1000">1 km</option>
+            <option value="2500">2.5 km</option>
+            <option value="5000" selected>5 km</option>
+            <option value="10000">10 km</option>
+            <option value="20000">20 km</option>
+          </select>
+        </div>
+         <div class="control-item">
+          <label for="type-filter">Tipo de establecimiento:</label>
+          <select id="type-filter">
+            <option value="coffee_shop">Coffee Shop</option>
+            <option value="cafe" selected>Café</option>
+            <option value="all">Todos</option>
+          </select>
+        </div>
+         <div class="action-buttons">
+        <button id="search-btn">📍 Buscar Cafeterías Cercanas</button>
+        <div class="zoom-controls">
+          <button id="zoom-in" class="zoom-btn">🔍 +</button>
+          <button id="zoom-out" class="zoom-btn">🔎 -</button>
+        </div>
+      </div>
+      <div id="status"></div>
+    </div>
+    <!-- Indicador de carga -->
+    <div id="loading-overlay" class="hidden">
+      <div class="spinner"></div>
+      <p>Cargando cafeterías...</p>
+    </div>
+
+    <div id="map"></div>
+  </main>
+
+  <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Leaflet MarkerCluster JS -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="script.js"></script>
+
+    <footer>
+      <div class = "footer-content">
+          <p>&copy; 2026 Abril Ruiz</p>
+      </div>
+    </footer>
+</body>
+</html>

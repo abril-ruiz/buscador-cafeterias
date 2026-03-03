@@ -1,0 +1,14 @@
+
+# VS Code
+.vscode/
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Editor backups
+*~
+*.swp
+*.swo
