@@ -1,10 +1,10 @@
-# Buscador de Cafeterías - Ruiz Abril
+## Buscador de Cafeterías - Ruiz Abril
 
-## Descripción
+# Descripción
 
 Un buscador interactivo de cafeterías cercanas utilizando OpenStreetMap y Leaflet.js. Permite encontrar cafeterías por ubicación actual, dirección específica o nombre de establecimiento.
 
-## Tecnologías utilizadas
+# Tecnologías utilizadas
 
 - Leaflet.js
 - OpenStreetMap
@@ -15,7 +15,7 @@ Un buscador interactivo de cafeterías cercanas utilizando OpenStreetMap y Leafl
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/usuario/cafe-finder.git
+   git clone https://github.com/abril-ruiz/cafe-finder.git
    cd cafe-finder
    ```
 2. Abre el archivo `index.html` en tu navegador preferido (o utiliza un servidor local):
