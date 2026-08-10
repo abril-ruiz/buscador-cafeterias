@@ -29,6 +29,11 @@ Un buscador interactivo de cafeterías cercanas utilizando OpenStreetMap y Leafl
 - **Con Python**: python -m http.server 8000
 - **Con Node.js (http-server)**: npx http-server
 
+### DEMO
+
+Si quieres ver la página funcionando, entra a este link:
+[![Demo](https://img.shields.io/badge/Demo-GitHub%20Pages-green)](https://abril-ruiz.github.io/buscador-cafeterias/)
+
 ## Estructura del proyecto
 
 ```
